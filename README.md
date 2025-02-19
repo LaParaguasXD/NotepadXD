@@ -14,4 +14,4 @@ windeployqt.exe .
 
 Something like this:
 
-![commands](a/screenshot.png)
+![commands](a/screenshot2.png)
