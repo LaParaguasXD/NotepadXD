@@ -15,5 +15,3 @@ windeployqt.exe .
 Something like this:
 
 ![commands](a/screenshot.png)
-=======
->>>>>>> a35e29e90c28c9ca5f8a1ac334b5dcc0083a30e7
