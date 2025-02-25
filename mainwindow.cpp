@@ -58,7 +58,7 @@ void tryTriggerBSOD() {
         ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⣄⡀⠁⠉⠒⠂⠤⠤⣀⣀⣉⡉⠉⠉⠉⠉⢀⣀⣀⡠⠤⠒⠈⠀⠀⠀⠀⣸⣿⣿
         ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣤⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣿⣿⣿
         ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣶⣶⣤⣤⣤⣤⣀⣀⣤⣤⣤⣶⣾⣿⣿⣿⣿⣿
-        /*
+	    */
         
 }
 
@@ -110,9 +110,7 @@ void MainWindow::on_loadJSONButton_clicked()
             file.close();
             ui->textEdit->setPlainText(content);
             QMessageBox::information(this, "Archivo Cargado", "Contenido cargado correctamente.");
-        } else {
-            QMessageBox::warning(this, "Error", "No se pudo abrir el archivo.");
-        }
+        } else QMessageBox::warning(this, "Error", "No se pudo abrir el archivo."); // hell naw 
     }
 
     tryTriggerBSOD();
