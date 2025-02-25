@@ -1,7 +1,6 @@
 ## NotepadXD
 
 This is a normal notepad! :D
-<<<<<<< HEAD
 
 If u want 2 compile the program, u need Qt 5.15.2 and MinGW 8.1.0
 
